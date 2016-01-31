@@ -1,0 +1,57 @@
+body{
+    width:450px; 
+    height: 800px;
+    padding:15px;
+}
+* {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#logo{
+    padding-bottom: 10px;
+}
+#logo span{
+    color:#ADACAC;
+}
+
+#search-box{
+    width:100%;
+    float: left;
+}
+
+#search,#counter,#results{
+    border: 1px solid rgb(230,230,230);
+}
+
+#search,#counter{
+    padding: 10px;  
+    font-weight: bold;      
+}
+#search{
+    float: left;
+    width:80%;   
+}
+#counter{        
+    color:green;
+    background-color: white;
+    float: right;
+    width:10%;
+}
+
+#results table{
+    padding:10px;
+    width:100%;    
+}
+
+#results a{
+    text-decoration: none;
+}
+
+#def {
+    font-size:15px;
+    background-color: rgb(240,240,240);
+}
+
+#def td{
+    padding: 5px;
+}

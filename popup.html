@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+    <div id="logo">
+        <img src="assets/img/icon48.png">
+        <span>Learn about Today's JavaScript Jargon</span>
+    </div>
+    <div id="body-wrapper">
+      <div id="search-box">
+            <input type="text" id="search"  placeholder="Type a jargon term...">
+            <input type="text" id="counter"  value="" disabled> 
+      </div>      
+       <div id="results">
+            <table>
+                <tbody>
+                  <!-- items to be injected here  -->
+                </tbody>
+            </table>
+       </div>
+    </div>
+
+
+    <!-- libs   -->
+    <script src="libs/jquery.js"></script>
+    <script src="libs/markdown.js"></script>
+    <script src="libs/fuzzy-min.js"></script>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/popup.js"></script>
+
+
+</body>
+</html>
