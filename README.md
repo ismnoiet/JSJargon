@@ -8,7 +8,7 @@ An elegant chrome extension to learn about JavaScript jargon(inspired by [SJSJ](
 Well, at this moment it is not available at chrome webstore due to some problems with my chrome developer account.
 Fortunatuly you can install it manually, just follow the following simple steps :
 
-* Download the zip file and extract it wherever you want.
+* Download the [zip file](https://github.com/ismnoiet/JSJargon/archive/v1.0.0.zip) and extract it wherever you want.
 * Open a new chrome web page and go to
 [chrome://extensions](chrome://extensions).
 * Check the ``developer mode`` checkbox on the top right.
