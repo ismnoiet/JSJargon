@@ -46,6 +46,11 @@ jQuery(document).ready(function(){
 
     $('#search').keyup(function(){
         var searchPattern  = $(this).val();
+        
+        searchPattern = searchPattern.split(':');
+
+        var index = searchPattern[1];
+        searchPattern = searchPattern[0];
 
         // returned matches have additional IDS and the original key is named original
         var retrievedResult = fuzzy.filter(searchPattern,data_keys);                    
