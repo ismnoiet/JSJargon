@@ -40,7 +40,7 @@ A big thank you for the open source community and especially the people working 
 
 ## Contribution
 If you want to contribute, improve or suggest any idea,
-you are more than welcomed just open an issue and i'll be more than happy to interact with you as soon as i'm available.
+you are more than welcomed just open an issue and i'll be happy to interact with you as soon as i'm available.
 
 ## TODO
 * Replace the default scrollbar with a nice one.
