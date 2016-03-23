@@ -13,7 +13,7 @@ Fortunatuly you can install it manually, just follow the following simple steps 
 [chrome://extensions](chrome://extensions).
 * Check the ``developer mode`` checkbox on the top right.
 * Click on the ``load unpacked extension`` button and specify the path to the extracted zip file.
-* That's it you're done, JUST don't forget to give us a star if you find it a good idea.
+* That's it you're done, JUST don't forget to give us a star if you find it useful.
 
 ## How it works ?
 
