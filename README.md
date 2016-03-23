@@ -33,7 +33,7 @@ This extension also is markdown-based meaning that it reads markdown files, inte
 
 ## Used libraries:
 
-A big thank you for the open source community and especially the people working on the following libraries
+A big thank you for the open source community and especially the people working on the following libraries:
 * **Jquery** [url](https://code.jquery.com/jquery-2.1.4.min.js).
 * **Markdown-js** [url](https://github.com/evilstreak/markdown-js).
 * **Fuzzy**  [url](https://github.com/mattyork/fuzzy).
