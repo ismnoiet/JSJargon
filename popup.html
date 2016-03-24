@@ -16,12 +16,14 @@
             <input type="text" id="search"  placeholder="Type a jargon term...">
             <input type="text" id="counter"  value="" disabled> 
       </div>      
-       <div id="results">
-            <table>
-                <tbody>
-                  <!-- items to be injected here  -->
-                </tbody>
-            </table>
+       
+           <div id="results">
+                <table>
+                    <tbody>
+                      <!-- items to be injected here  -->
+                    </tbody>
+                </table>
+           </div>           
        </div>
     </div>
 
@@ -30,10 +32,21 @@
     <script src="libs/jquery.js"></script>
     <script src="libs/markdown.js"></script>
     <script src="libs/fuzzy-min.js"></script>
+    <script src="libs/jquery.slimscroll.min.js"></script>
+    
 
     <script src="assets/js/data.js"></script>
     <script src="assets/js/init.js"></script>
     <script src="assets/js/popup.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#body-wrapper').slimScroll({
+                height: '500px'
+            });                
+        })
+    </script>
+    
 
 
 </body>

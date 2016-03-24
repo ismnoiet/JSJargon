@@ -62,6 +62,13 @@ jQuery(document).ready(function(){
         $('#counter').val(retrievedResult.length);
 
     }); 
+
+
+  
+    $('#body-wrapper').slimScroll({
+        height: '500px'
+    });                
+    
                
 
 });
