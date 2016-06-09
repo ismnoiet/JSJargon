@@ -1,74 +1,65 @@
 jQuery(document).ready(function(){
 
-    var data_keys;    
+    var data_keys,
+        data_names;
+
     data_keys = Object.keys(data);
+    data_names = data.map(function(item){return item.name.toLowerCase();});
+
     $('#results table').html(getAll(data));    
 
 
-    $('#counter').val(data_keys.length);
+    $('#counter').text(data_keys.length);
 
     $('#results table').on('click','.match a',function(e){
         e.preventDefault();        
+        var activeItem = $(this).closest('td').find('b').html().toLowerCase(),
+            keywordItem = data[data_names.indexOf(activeItem)];
+            root = $(this).closest('tr'),
+            nextItem = root.next();
 
-        // if it is to show data  
-        if(!config.active){                    
-            config.active = true;                    
+            window.nextItem = nextItem;
+
+
+
+        if(isDef.call(nextItem)){
+            // hide the definition 
+            nextItem.remove(); 
         }else{
-            var myDef =  isMyDef.call(this);                   
-            // meaning there is already a selected  item and we clicked on another item
-            if(!myDef){
-                config.active = true;                        
-            }else{
-                // otherwise we are clicking on the same item for the second time which means we want to hide it's def
-                removeDef.call(this); 
-                config.active = false;                                                
-            }
-        }
-
-        if(config.active == true){
-           removeDef.call(this);
-            // get the key
-            var keyword = $(this).siblings()[0]
-                keyword = $(keyword).text().replace(' -','').toLowerCase().trim();
-                console.log(keyword);
-
-            var root = $(this).parent().parent();
-
-            keywordItem = data[keyword];
-            console.log(root);
-            
-            // insert definition                 
-            $('<tr id="def"><td colspan="2"> '  + markdownIt(keywordItem.value) + '</td></tr>').insertAfter(root);
-
-        }                
-        return false;
+            // remove any possible active definition
+            $('#def').remove();
+            // insert definition                             
+            $('<tr id="def"><td colspan="2"> '  + markdownIt(keywordItem.markdown) + '</td></tr>').insertAfter(root); 
+        } 
     });  
 
     $('#search').keyup(function(){
-        var searchPattern  = $(this).val();
-        
+        var searchPattern  = $(this).val().toLowerCase();
+          
         searchPattern = searchPattern.split(':');
 
         var index = searchPattern[1];
         searchPattern = searchPattern[0];
 
+        // @debug
+        // window.searchPattern = searchPattern;
+        // window.data_names = data_names;
+
         // returned matches have additional IDS and the original key is named original
-        var retrievedResult = fuzzy.filter(searchPattern,data_keys);                    
-            retrievedResult = retrievedResult.map(function(key){
-                return data[key.original];
+        var retrievedResult = fuzzy.filter(searchPattern,data_names);                    
+            retrievedResult = retrievedResult.map(function(entry){
+                return data[entry.index];
         });
+
+        console.log(JSON.stringify(retrievedResult,2));
         
         $('#results table').html(getAll(retrievedResult));
-        $('#counter').val(retrievedResult.length);
+        $('#counter').text(retrievedResult.length);
 
     }); 
-
-
-  
-    $('#body-wrapper').slimScroll({
-        height: '500px'
-    });                
-    
-               
-
+      
+    $('.scroller').slimScroll({
+        height: '400px'
+    });
+            
 });

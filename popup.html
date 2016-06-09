@@ -11,43 +11,36 @@
         <img src="assets/img/icon48.png">
         <span>Learn about Today's JavaScript Jargon</span>
     </div>
-    <div id="body-wrapper">
-      <div id="search-box">
-            <input type="text" id="search"  placeholder="Type a jargon term...">
-            <input type="text" id="counter"  value="" disabled> 
-      </div>      
-       
+    
+    <div id="search-box">
+          <div class="search-input-container">
+              <input type="text" id="search"  placeholder="Type a jargon term...">              
+          </div>
+          <div class="search-counter-container">
+            <span id="counter"></span>
+          </div>            
+    </div>      
+     
+    <div id="results-container">      
+        <div class="scroller">
            <div id="results">
                 <table>
                     <tbody>
                       <!-- items to be injected here  -->
                     </tbody>
                 </table>
-           </div>           
-       </div>
+           </div>                    
+        </div>
     </div>
-
 
     <!-- libs   -->
     <script src="libs/jquery.js"></script>
     <script src="libs/markdown.js"></script>
-    <script src="libs/fuzzy-min.js"></script>
+    <script src="libs/fuzzy-min.js"></script>        
     <script src="libs/jquery.slimscroll.min.js"></script>
     
-
     <script src="assets/js/data.js"></script>
     <script src="assets/js/init.js"></script>
     <script src="assets/js/popup.js"></script>
-    
-    <script>
-        $(document).ready(function(){
-            $('#body-wrapper').slimScroll({
-                height: '500px'
-            });                
-        })
-    </script>
-    
-
-
 </body>
 </html>

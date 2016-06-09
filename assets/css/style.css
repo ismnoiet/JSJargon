@@ -1,6 +1,6 @@
 body{
     width:450px; 
-    height: 800px;
+    /*height: 800px;*/
     padding:15px;
 }
 * {
@@ -15,27 +15,46 @@ body{
 }
 
 #search-box{
-    width:100%;
-    float: left;
+    display: table;
+    width:100%;    
+    border: 1px solid #E6E6E6;
+    border-bottom: 0px;    
 }
 
-#search,#counter,#results{
-    border: 1px solid rgb(230,230,230);
+.search-input-container{
+    display:table-cell;
+    vertical-align: middle;
+    width:85%;
+}
+
+#search{
+    width: 100%;
+    border:0px;
+    outline: none; /* to remove the default border caused when using chrome */
+}
+
+.search-counter-container{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+#counter{        
+    color:green;
+    background-color: white;
+    display: inline-block;
+    border-left: 1px solid #E6E6E6;
+    text-align: center;
+    width: 66%;
 }
 
 #search,#counter{
     padding: 10px;  
     font-weight: bold;      
 }
-#search{
-    float: left;
-    width:80%;   
-}
-#counter{        
-    color:green;
-    background-color: white;
-    float: right;
-    width:10%;
+
+#results-container{
+    border: 1px solid rgb(230,230,230);
+    width: 100%;
 }
 
 #results table{
