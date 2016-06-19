@@ -67,10 +67,13 @@ body{
 }
 
 #def {
-    font-size:15px;
-    background-color: rgb(240,240,240);
+    font-size:15px; 
 }
 
 #def td{
     padding: 5px;
+}
+
+small.index{
+    margin-left:5px;
 }

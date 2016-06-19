@@ -2,10 +2,6 @@ function isDef(){
     return (this.attr('id') === 'def')
 }
 
-function markdownIt(str){
-   return  markdown.toHTML(str);
-}
-
 function getAll(data){
     var resultHTML = '';
     $.each(data,function(index,item){         

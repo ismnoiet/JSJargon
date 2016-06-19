@@ -29,7 +29,12 @@ jQuery(document).ready(function(){
             // remove any possible active definition
             $('#def').remove();
             // insert definition                             
-            $('<tr id="def"><td colspan="2"> '  + markdownIt(keywordItem.markdown) + '</td></tr>').insertAfter(root); 
+            $('<tr id="def"><td colspan="2"> '  + marked(keywordItem.markdown) + '</td></tr>').insertAfter(root); 
+
+            // enable syntax-highlighting  
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
         } 
     });  
 
