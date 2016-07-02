@@ -74,6 +74,10 @@ body{
     padding: 5px;
 }
 
+#def a{
+    color:blue;
+}
+
 small.index{
     margin-left:5px;
 }
