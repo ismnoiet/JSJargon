@@ -1,8 +1,9 @@
 ## ![](./assets/img/icon48.png)JSJargon
 An elegant chrome extension to learn about JavaScript jargon(inspired by [SJSJ](https://github.com/HugoGiraudel/SJSJ)).
 
-## Screenshot
-![](./assets/img/screenshot.png)
+## Screenshots
+![](./assets/img/screenshot1.png)
+![](./assets/img/screenshot2.png)
 
 ## How to install it ?
 Well, at this moment it is not available at chrome webstore due to some problems with my chrome developer account.
