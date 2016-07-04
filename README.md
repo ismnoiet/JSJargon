@@ -35,15 +35,16 @@ This extension also is markdown-based meaning that it reads markdown files, inte
 
 ## Used libraries:
 
-A big thank you for the open source community and especially the people working on the following libraries & projects:
+A big thank you for the open source community and especially the people working on the following & projects:
 * **Jquery** [url](https://code.jquery.com/jquery-2.1.4.min.js).
 * **Marked** [url](https://github.com/chjj/marked).
 * **highlight.js** [url](https://github.com/isagalaev/highlight.js).
 * **Fuzzy**  [url](https://github.com/mattyork/fuzzy).
+* **slimScroll** [url](https://github.com/rochal/jQuery-slimScroll).
 
 ## Contribution
 If you want to contribute, improve or suggest any idea,
-you are more than welcomed just open an issue and i'll be happy to interact with you as soon as i'm available.
+you are more than welcomed, just open an issue and i'll be happy to interact with you as soon as i'm available.
 
 ## TODO
 * Create firefox alternative.
