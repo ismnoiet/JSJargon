@@ -1,7 +1,7 @@
 {
     "manifest_version":2,
     "version":"0.1",
-    "name":"ESJargon",
+    "name":"JSJargon",
     "description":"An extension for nowadays JavaScript(ES) jargon ",
     "icons": {
              "16": "assets/img/icon16.png",
