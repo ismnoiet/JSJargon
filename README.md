@@ -6,13 +6,13 @@ An elegant chrome extension to learn about JavaScript jargon(inspired by [SJSJ](
 ![](./assets/img/screenshot2.png)
 
 ## How to install it ?
-Well, at this moment it is not available at chrome webstore due to some problems with my chrome developer account.
-Fortunatuly you can install it manually, just follow the following simple steps :
+You can use Chrome web store to install this extension from [this link](https://chrome.google.com/webstore/detail/jsjargon/lamlcalbiclchaiikcmlnjegadeenokb).  
+But if you want to install it manually, just follow the next simple steps :
 
 * Download the [zip file](https://github.com/ismnoiet/JSJargon/archive/v1.0.0.zip) and extract it wherever you want.
 * Open a new chrome web page and go to
 [chrome://extensions](chrome://extensions).
-* Check the ``developer mode`` checkbox on the top right.
+* Check the ``developer mode`` checkbox on the top right corner.
 * Click on the ``load unpacked extension`` button and specify the path to the extracted zip file.
 * That's it you're done, JUST don't forget to give us a star if you find it useful.
 
